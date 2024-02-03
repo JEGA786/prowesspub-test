@@ -3,6 +3,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: capitalize;
     
+    
 }
 /* ---------------------------colors--------------------------- */
 
@@ -209,15 +210,18 @@ font-weight:560;
 
 .button{
     background:var(--primary-color) !important;
+    color: var(--text-white-color);
   min-width: 7rem;
   border-radius: 3px;
   border: solid 1px var(--primary-color);
-    transition: all 0.7s ease-in-out;
+    transition: all 1s ease-in-out !important;
 }
 .button:hover{
     box-shadow: 0 0 15px var(--primary-color);
     background:transparent !important;
     border: solid 1px var(--primary-color);
+    color: var(--text-black-color);
+    background: var(--primary-light-color) !important;
 }
 
 
@@ -281,10 +285,7 @@ font-size: 11px;
 .retwite span {
     font-size: 12px;
 }
-h6{
-    font-weight: 550 !important;
-    letter-spacing: 0.5px;
-}
+
 h6 > span{
     font-weight: 0px !important;
     letter-spacing: 0px;
@@ -309,6 +310,9 @@ hr{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
+
+
+/* -------------------footer---------------------------------------- */
 .signup{
     width: 350px;
     
@@ -323,14 +327,16 @@ hr{
     width: 6rem;
     height:35px;
     border-radius: 3px;
+    color: var(--text-white-color);
     transition: all 0.7s ease-in-out;
 }
 
 .inputs .btn:hover{
-    background: var(--primary-light-color);
     box-shadow: 0 0 15px var(--primary-color);
     background:transparent !important;
     border: solid 1px var(--primary-color);
+    color: var(--text-black-color);
+    background: var(--primary-light-color) !important;
 }
 
 .News{
@@ -353,7 +359,8 @@ border: 1px solid rgba(200, 243, 237, 0.3);
 }
 
 .footer{
-    background-image: url(/images/footerimg.png);
+    background-image: url(/images/footerimg2.png);
+    background-size: cover;
 }
 
 .menu .menu-items {
@@ -373,7 +380,7 @@ border: 1px solid rgba(200, 243, 237, 0.3);
     background: var(--primary-light-color);
 }
 
-
+/* -------------------------media-quary------------------------ */
 @media screen and (max-width: 480px) {
     .img-box img{
       

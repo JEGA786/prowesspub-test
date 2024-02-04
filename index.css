@@ -12,7 +12,7 @@
     --primary-light-color:rgb(128, 202, 201);
     --secondary-color:rgb(203, 212, 211);
     --text-white-color:rgb(255, 255, 255);
-    --text-black-color:rgb(22, 22, 22);
+    --text-black-color:rgb(22, 22, 22) !important;
 }
 
 /* ------------------------------------------- */
@@ -124,7 +124,7 @@ ul li a
     background: rgba(255, 255, 255, 0.31);
     border-radius: 3px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.9px);
+    backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(3.9px);
     overflow: visible;
 }
@@ -143,7 +143,7 @@ font-weight:600;
 font-weight:560;
 }
 .prah{
-    color: var(--text-black-color);
+    color: var(--text-black-color) !important;
     font-size:clamp(7px,4vw,15px);
     letter-spacing: 0px;
 }
@@ -206,6 +206,9 @@ font-weight:560;
     object-fit: cover;
     
 }
+.social-icons li{
+    color: var(--text-white-color);
+   }
 
 
 .button{
@@ -222,6 +225,10 @@ font-weight:560;
     border: solid 1px var(--primary-color);
     color: var(--text-black-color);
     background: var(--primary-light-color) !important;
+}
+
+.read-more:hover{
+color: var(--primary-color) !important;
 }
 
 
@@ -400,5 +407,8 @@ border: 1px solid rgba(200, 243, 237, 0.3);
 @media screen and (max-width: 650px) {
    .lastprah{
     display: none;
+   }
+   .social-icons li{
+    color: var(--primary-color);
    }
   }
